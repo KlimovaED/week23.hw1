@@ -15,7 +15,7 @@ const cards =[ {id:1, color:'blue',title:"Безлимитный 300", valuta:"�
       {
         cards.map((card)=>{
           return(
-            <Card card ={card} key={card.id}/>
+            <Card {...card} key={card.id}/>
           )
         })
       }
