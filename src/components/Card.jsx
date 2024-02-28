@@ -1,7 +1,7 @@
 import styles from './card.module.scss';
 import React,{useState} from 'react';
 
- function Card({id,color,title,valuta,price,periud,volume,description}){ 
+ function Card({color,title,valuta,price,periud,volume,description}){ 
 const[active,setActive]= useState(false);
 
 const handleChange =() =>{
@@ -9,7 +9,7 @@ const handleChange =() =>{
 }
 
     return(
-        <div key={id} style={active 
+        <div  style={active 
                                 ? {transform: "scale(1.1)"} 
                                 : {}}
                                 className={`${styles.Card} ${styles[color]}`} onClick={handleChange}>
